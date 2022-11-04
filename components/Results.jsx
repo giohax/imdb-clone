@@ -1,9 +1,11 @@
 import React from "react";
 
-const Results = () => {
+const Results = ({ results }) => {
     return (
         <div>
-            <h1>Results</h1>
+            {results.map((results) => (
+                <h1>{results.title}</h1>
+            ))}
         </div>
     );
 };
